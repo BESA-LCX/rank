@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3动画</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        #b{
+            display: flex;
+        }
+        .box{
+            width: 250px;
+            height: 300px;
+            margin-right: 10px;
+            overflow: hidden;
+        }
+        .box img{
+            width: 100%;
+            height: 100%;
+            transition: all 2s ease;
+        }
+        .box:hover img{
+            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+        }
+        .box2{
+            position: relative;
+            width: 250px;
+            margin-right: 10px;
+            height: 300px;
+            
+        }
+        .box2 img{
+            width: 100%;
+            height: 100%;
+
+        }
+        .detail{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            background-color: black;
+            opacity: 0.7;
+            color: white;
+            transition: all 1s ease;
+        }
+        .box2:hover .detail{
+            height: 100%;
+            
+          
+        }
+        .content{
+            display: none;
+            margin-top: 30%;
+            
+            
+            
+        }
+        .box2:hover .content{
+            display: block;
+        }
+        .content p{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            
+            
+        }
+        .bar{
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 3%;
+            height: 700px;
+            background-color: teal;
+            transition: all 1.5s ease;
+        }
+        .bar:hover{
+            width: 16%;
+        }
+        .bar:hover .link{
+            display: block;
+        }
+        .bar-item{
+            width: 100%;
+            margin-top: 10px;
+        }
+        .link{
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: none;
+        }
+        .link:hover{
+            color: rebeccapurple;
+
+        }
+        a{
+            border:2px solid rgb(200, 195, 195);
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color:white;
+            text-decoration: none;
+            background-color: black;
+        }
+        .active2{
+            background-color: black;
+            color: white;
+        }
+        #k{
+            width: 500px;
+        }
+        .col-12 img{
+          width: 100%;
+          height: 500px;
+        }
+        .y{
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            background-color: black;
+            color: white;
+            z-index: 100;
+            opacity: 0.9;
+            width: 60%;
+            height: 380px;
+            transition: all ease 3s;
+            display: none;
+        }
+        .top{
+            width: 100%;
+            background-color: white;
+            opacity: 0.7;
+            margin: 0;
+            text-align: right;
+        }
+        .row{
+            height: 350px;
+        }
+        .col-8 p{
+            margin: 0;
+            margin-top: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+  <form>
+        
+      
+        <a id="keai" href="javascript:;">可爱型</a>
+        <a id="meili" href="javascript:;">美丽型</a>
+        <button type="button" class="btn btn-secondary">取消</button>
+  </form>
+<div id="b">
+    <div class="box" id="yuiyui">
+        <img src="img/idol/1.小栗有以.jpg" alt="">
+    </div>
+    <div class="y" id="yuiyui-modol">
+        <p class="top"><button type="button" class="close-btn">close</button></p>
+         <div class="row">
+             <div class="col-4">
+                 <img src="img/idol/1.小栗有以.jpg" width="100%" height="100%">
+             </div>
+             <div class="col-8">
+                 <p>姓名：与田祐希</p>
+                 <p>出生日期：2000年5月5日</p>
+                 <p>出生地：日本福冈县</p>
+                 <p>星座：金牛座</p>
+                 <p>身高：153cm</p>
+                 <p>血型：</p>
+             </div>
+         </div>
+        
+    </div>
+    <div class="box" id="yoda">
+        <img src="img/idol/3.与田祐希.jpg" alt="">
+    </div>
+    <div class="y" id="yoda-modol">
+        <p class="top"><button type="button" class="close-btn">close</button></p>
+         <div class="row">
+             <div class="col-4">
+                 <img src="img/idol/3.与田祐希.jpg" width="100%" height="100%">
+             </div>
+             <div class="col-8">
+                 <p>姓名：与田祐希</p>
+                 <p>出生日期：2000年5月5日</p>
+                 <p>出生地：日本福冈县</p>
+                 <p>星座：金牛座</p>
+                 <p>身高：153cm</p>
+                 <p>血型：</p>
+             </div>
+         </div>
+        
+    </div>
+
+    <div class="box2" id="haruna">
+        <img src="img/idol/2.小嶋阳菜.jpg" alt="">
+        <div class="detail">
+            <div class="content">
+                <p>姓名：小嶋阳菜</p>
+                <p>出生日期：1988年4月12日</p>
+                <p>星座：白羊座</p>
+                <p>出生地：日本埼玉县</p>
+                <p>所属：AKB48</p>
+            </div>
+        </div>
+    </div>
+    <div class="y" id="haruna-modol">
+        <p class="top"><button type="button" class="close-btn">close</button></p>
+        <div class="row">
+            <div class="col-4">
+                <img src="img/idol/2.小嶋阳菜.jpg" width="100%" height="100%">
+            </div>
+            <div class="col-8">
+                <p>姓名：小嶋阳菜</p>
+                <p>出生日期：1988年4月12日</p>
+                <p>出生地：日本埼玉县</p>
+                <p>星座：白羊座</p>
+                <p>身高：166cm</p>
+                <p>血型：</p>
+            </div>
+        </div>
+    </div>
+    <div class="box" id="yoda1">
+        <img src="img/idol/3.与田祐希.jpg" alt="">
+    </div>
+    <div class="y" id="yoda-modol1">
+        <p class="top"><button type="button" class="close-btn">close</button></p>
+         <div class="row">
+             <div class="col-4">
+                 <img src="img/idol/3.与田祐希.jpg" width="100%" height="100%">
+             </div>
+             <div class="col-8">
+                 <p>姓名：与田祐希</p>
+                 <p>出生日期：2000年5月5日</p>
+                 <p>出生地：日本福冈县</p>
+                 <p>星座：金牛座</p>
+                 <p>身高：153cm</p>
+                 <p>血型：</p>
+             </div>
+         </div>
+        
+    </div>
+ </div><!--#b-->
+    <!--侧边动态导航栏-->
+    <div class="bar">
+        <div class="bar-item"><a href="" class="link">首页</a></div>
+        <div class="bar-item"><a href="" class="link">奥特曼</a></div>
+        <div class="bar-item"><a href="" class="link">女性角色</a></div>
+        <div class="bar-item"><a href="" class="link">海贼王</a></div>
+        <div class="bar-item"><a href="" class="link">军事</a></div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script>
+
+       $("#keai").click(function(){
+        $(".box").css({display:"block"});
+        $(".box2").css({display:"none"});
+       });
+       $("#meili").click(function(){
+         $(".box2").css({display:"block"});
+         $(".box").css({display:"none"});
+       });
+      
+
+       var span=document.querySelectorAll("a");
+       for(var i=0;i<span.length;i++){
+       span[i].onclick=function(){
+          $(this).addClass("active2");
+          $(this).prevAll().removeClass("active2");
+          $(this).nextAll().removeClass("active2");
+       }
+    }
+    $("button").click(function(){
+        $(".box,.box2").css({display:"block"});
+        $("a").removeClass("active2");
+       });
+
+     
+       $("#yoda").click(function(){
+          $("#yoda-modol").css({display:"block"});
+       });
+       $("#yoda1").click(function(){
+          $("#yoda-modol1").css({display:"block"});
+       });
+       $("#haruna").click(function(){
+           $("#haruna-modol").css({display:"block"});
+       });
+       $("#yuiyui").click(function(){
+           $("#yuiyui-modol").css({display:"block"});
+       });
+       $(".close-btn").click(function(){
+           $(".y").css({display:"none"});
+       });
+    </script>
+</body>
+</html>

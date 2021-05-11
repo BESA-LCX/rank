@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奥特曼排名</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/second.css">
+    <link rel="stylesheet" type="text/css" href="Swiper-2.7.6/dist/idangerous.swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body id="bd">
+    <div class="nav2">
+        <div class="logo"><a href="home.html" class="logo-link"><img src="img/logo1.png" width="150" height="50"></a></div>
+        <div class="bar">
+            <li class="bar-item">
+                <a href="" class="link" id="dian">奥特曼排名</a>
+                <div id="san"></div><!--三角形-->
+                <div class="bar-second">
+                    <div class="bar-second-item"><a href="" class="link-second">单体奥特曼综合实力排名</a></div>
+                    <div class="bar-second-item"><a href="" class="link-second">单体奥特曼格斗能力排名</a></div>
+                </div>
+            </li>
+            <li class="bar-item">
+                <a href="" class="link">女性角色排名</a>
+                <div id="san"></div><!--三角形-->
+                <div class="bar-second">
+                    <div class="bar-second-item"><a href="nv_idol.html" class="link-second">av女优排名</a></div>
+                    <div class="bar-second-item"><a href="nv_idol.html" class="link-second">偶像排名</a></div>
+                    <div class="bar-second-item"><a href="nv_idol.html" class="link-second">女演员排名</a></div>
+                </div>
+            </li>
+            <li class="bar-item">
+                <a href="" class="link">海贼王排名</a>
+                <div id="san"></div><!--三角形-->
+                <div class="bar-second">
+                    <div class="bar-second-item"><a href="ONE_PIECE.html" class="link-second">海贼王人物实力排名</a></div>
+                </div>
+            </li>
+            <li class="bar-item">
+                <a href="military.html" class="link">军事排名</a>
+            </li>
+            <li class="bar-item">
+                <a href="" class="link">语种切换</a>
+                <div id="san"></div><!--三角形-->
+                <div class="bar-second">
+                    <div class="bar-second-item"><a href="javascript:;" class="link-second" id="english">English</a></div>
+                    <div class="bar-second-item"><a href="javascript:;" class="link-second" id="chinese">中文</a></div>
+                    <div class="bar-second-item"><a href="javascript:;" class="link-second" id="japanese">日本語</a></div>
+                </div>
+            </li>
+        </div>
+    </div><!--nav-->
+
+
+    
+    <div class="swiper-container" id="mao">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide red-slide">
+              <div class="san">新生代</div>
+             <img src="img/赛罗.jpg" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide blue-slide">
+              <div class="san">新生代</div>
+             <img src="img/泽塔.jpeg" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide orange-slide">
+              <div class="san">新生代</div>
+             <img src="img/泰伽奥特曼.jpeg" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide green-slide">
+              <div class="san">新生代</div>
+             <img src="img/泰塔斯.jpg" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide pink-slide">
+              <div class="san">新生代</div>
+             <img src="img/风马.jpg" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide pink-slide">
+            <div class="san">新生代</div>
+           <img src="img/Ultraman/利布特.jpg" width="100%" height="100%">
+         </div>
+          <div class="swiper-slide red-slide">
+              <div class="san">平成系</div>
+             <img src="img/梦比优斯.jpg" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide blue-slide">
+              <div class="san">平成系</div>
+             <img src="img/麦克斯.jpg" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide orange-slide">
+              <div class="san">平成系</div>
+             <img src="img/杰诺.jpg" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide blue-slide">
+              <div class="san">昭和系</div>
+             <img src="img/爱迪.jpg" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide orange-slide">
+              <div class="san">昭和系</div>
+            <img src="img/佐菲.jpg" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide orange-slide">
+              <div class="san">平成系</div>
+            <img src="img/奈欧斯.jpg" width="100%" height="100%">
+          </div>
+          <div class="swiper-slide orange-slide">
+              <div class="san">平成系</div>
+            <img src="img/赛文21.jpg" width="100%" height="100%">
+          </div>
+        </div>
+        <div class="pagination"></div>
+      </div>
+  
+    <!--移动端隐藏导航按钮-->
+          <button id="move-btn"><i class="fa fa-lg fa-bars" aria-hidden="true"></i></button>
+      <div class="move-bar">
+        <div class="move-bar-item"><a href="Ultraman.html" class="link" id="s1">奥特曼</a></div>
+        <div class="move-bar-item"><a href="nv_idol.html" class="link" id="s2">女性角色</a></div>
+        <div class="move-bar-item"><a href="ONE_PIECE.html" class="link" id="s3">海贼王</a></div>
+        <div class="move-bar-item"><a href="military.html" class="link" id="s4">军事</a></div>
+        <div class="move-bar-item"><a href="javascript:;" class="link" id="s5">Enligsh</a></div>
+        <div class="move-bar-item"><a href="javascript:;" class="link" id="s6">中文</a></div>
+        <div class="move-bar-item"><a href="javascript:;" class="link" id="s7">日本語</a></div>
+    </div>
+   <!--选项卡-->     
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">单体奥特曼综合实力排名</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">单体奥特曼格斗能力排名</a>
+        </li>
+      </ul>
+      <div class="tab-content text-white" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+           <div class="container">
+              <div class="r">
+                  <div class="box">
+                      <div class="box-top">NO.1 奥特之王</div>
+                      <div class="box-content"><img src="img/Ultraman/1.奥特之王.jpg"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.2 赛罗</div>
+                    <div class="box-content"><img src="img/赛罗.jpg"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.3 捷德</div>
+                    <div class="box-content"><img src="img/Ultraman/2.捷德.png"></div>
+                  </div>
+                  <div class="box">
+                      <div class="box-top">NO.4 泰伽</div>
+                      <div class="box-content"><img src="img/泰伽奥特曼.jpeg"></div>
+                  </div>
+                  <div class="box">
+                      <div class="box-top">NO.5 欧布</div>
+                      <div class="box-content"><img src="img/Ultraman/4.欧布奥特曼.jpg"></div>
+                  </div>
+              </div><!--r-->
+               <div class="r">
+                  <div class="box">
+                      <div class="box-top">NO.6 泽塔</div>
+                      <div class="box-content"><img src="img/泽塔.jpeg"></div>
+                  </div>
+                  <div class="box">
+                      <div class="box-top">NO.7 艾克斯</div>
+                      <div class="box-content"><img src="img/Ultraman/5.艾克斯.png"></div>
+                  </div>
+                  <div class="box">
+                      <div class="box-top">NO.8 维克特利</div>
+                      <div class="box-content"><img src="img/Ultraman/6.维克特利.jpg"></div>
+                  </div>
+                  <div class="box">
+                      <div class="box-top">NO.9 银河</div>
+                      <div class="box-content"><img src="img/Ultraman/7.银河.jpg"></div>
+                  </div>
+                  <div class="box">
+                      <div class="box-top">NO.10 罗索</div>
+                      <div class="box-content"><img src="img/Ultraman/8.罗索奥特曼.jpg"></div>
+                  </div>
+              </div><!--r-->
+              <div class="r">
+                  <div class="box">
+                    <div class="box-top">NO.10布鲁</div>
+                    <div class="box-content"><img src="img/Ultraman/8.布鲁.png"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.11 奥特之父</div>
+                    <div class="box-content"><img src="img/Ultraman/9.奥特之父.jpg"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.12 高斯</div>
+                    <div class="box-content"><img src="img/Ultraman/10.高斯.jpg"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.12 杰斯提斯</div>
+                    <div class="box-content"><img src="img/Ultraman/10.杰斯提斯.jpg"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.13 奈克赛斯</div>
+                    <div class="box-content"><img src="img/Ultraman/11.奈克赛斯.jpg"></div>
+                  </div>
+              </div><!--r-->
+              <div class="r">
+                  <div class="box">
+                    <div class="box-top">NO.14 雷欧</div>
+                    <div class="box-content"><img src="img/Ultraman/12.雷欧.png"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.15 赛文</div>
+                    <div class="box-content"><img src="img/Ultraman/NO.13 赛文.jpg"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.16 初代</div>
+                    <div class="box-content"><img src="img/Ultraman/14.初代.jpg"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.17 佐菲</div>
+                    <div class="box-content"><img src="img/Ultraman/15.佐菲.jpg"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.18 艾斯</div>
+                    <div class="box-content"><img src="img/Ultraman/16.艾斯.jpg"></div>
+                  </div>
+              </div><!--r-->
+              <div class="r">
+                    <div class="box">
+                      <div class="box-top">NO.18 泰罗</div>
+                      <div class="box-content"><img src="img/Ultraman/16.泰罗.jpg"></div>
+                    </div>
+                    <div class="box">
+                      <div class="box-top">NO.19 梦比优斯</div>
+                      <div class="box-content"><img src="img/Ultraman/17.梦比优斯.jpg"></div>
+                    </div>
+                    <div class="box">
+                      <div class="box-top">NO.20 麦克斯</div>
+                      <div class="box-content"><img src="img/Ultraman/18.麦克斯.jpg"></div>
+                    </div>
+                    <div class="box">
+                      <div class="box-top">NO.21 盖亚</div>
+                      <div class="box-content"><img src="img/Ultraman/盖亚.png"></div>
+                    </div>
+                    <div class="box">
+                      <div class="box-top">NO.21 阿古茹</div>
+                      <div class="box-content"><img src="img/Ultraman/19.阿古茹.jpg"></div>
+                    </div>
+              </div><!--r-->
+              <div class="r">
+                    <div class="box">
+                      <div class="box-top">NO.22 戴拿</div>
+                      <div class="box-content"><img src="img/Ultraman/21.戴拿奥特曼.jpg"></div>
+                    </div>
+                    <div class="box">
+                      <div class="box-top">NO.23 迪迦</div>
+                      <div class="box-content"><img src="img/Ultraman/迪迦.jpg"></div>
+                    </div>
+                    <div class="box">
+                      <div class="box-top">NO.24 希卡利</div>
+                      <div class="box-content"><img src="img/Ultraman/NO.20 希卡利.jpg"></div>
+                    </div>
+                    <div class="box">
+                      <div class="box-top">NO.25 杰克</div>
+                      <div class="box-content"><img src="img/Ultraman/23.杰克.jpg"></div>
+                    </div>
+                    <div class="box">
+                      <div class="box-top">NO.25 爱迪</div>
+                      <div class="box-content"><img src="img/Ultraman/23.爱迪.jpg"></div>
+                    </div>                
+              </div><!--r-->
+              <div class="r">
+                  <div class="box">
+                    <div class="box-top">NO.26 杰诺</div>
+                    <div class="box-content"><img src="img/Ultraman/24.杰诺.jpg"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.26 利布特</div>
+                    <div class="box-content"><img src="img/Ultraman/利布特.jpg"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.27 阿斯特拉</div>
+                    <div class="box-content"><img src="img/Ultraman/25.阿斯特拉.jpg"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.28 奈欧斯</div>
+                    <div class="box-content"><img src="img/Ultraman/26.奈欧斯.jpg"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.28 赛文21</div>
+                    <div class="box-content"><img src="img/Ultraman/26.赛文21.jpg"></div>
+                  </div>             
+             </div><!--r-->
+             <div class="r">
+                  <div class="box">
+                    <div class="box-top">NO.29 葛雷</div>
+                    <div class="box-content"><img src="img/Ultraman/27.葛雷.jpg"></div>
+                  </div>   
+                  <div class="box">
+                    <div class="box-top">NO.30 帕瓦特</div>
+                    <div class="box-content"><img src="img/Ultraman/28.帕瓦特.png"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.31 乔尼亚斯</div>
+                    <div class="box-content"><img src="img/Ultraman/32.乔尼亚斯.jpg"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.32 纳伊斯</div>
+                    <div class="box-content"><img src="img/Ultraman/29.纳伊斯.jpg"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.32 哉阿斯</div>
+                    <div class="box-content"><img src="img/Ultraman/29.哉阿斯.jpg"></div>
+                  </div>               
+            </div><!--r-->
+            <div class="r">
+                  <div class="box">
+                    <div class="box-top">NO.33 尤莉安</div>
+                    <div class="box-content"><img src="img/Ultraman/30.尤莉安.png"></div>
+                  </div> 
+                  <div class="box">
+                    <div class="box-top">NO.34 奥特之母</div>
+                    <div class="box-content"><img src="img/Ultraman/31.奥特之母.jpg"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.35 格丽乔</div>
+                    <div class="box-content"><img src="img/Ultraman/格丽乔.jpg"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.36 索拉</div>
+                    <div class="box-content"><img src="img/Ultraman/索拉奥特曼.jpg"></div>
+                  </div>
+                  <div class="box">
+                    <div class="box-top">NO.37 史考特</div>
+                    <div class="box-content"><img src="img/Ultraman/33.史考特.jpg"></div>
+                  </div>             
+           </div><!--r-->
+           <div class="r">
+                <div class="box">
+                  <div class="box-top">NO.38 查克</div>
+                  <div class="box-content"><img src="img/Ultraman/34.查克.jpg"></div>
+                </div> 
+                <div class="box">
+                  <div class="box-top">NO.39 贝斯</div>
+                  <div class="box-content"><img src="img/Ultraman/35.贝斯.jpg"></div>
+                </div>
+                <div class="box">
+                  <div class="box-top">NO.40 艾米娅</div>
+                  <div class="box-content"><img src="img/Ultraman/艾米娅奥特曼.jpg"></div>
+                </div>
+                <div class="box">
+                  <div class="box-top">NO.41 博伊</div>
+                  <div class="box-content"><img src="img/Ultraman/博伊.jpg"></div>
+                </div>
+                <div class="box">
+                  <div class="box-top">NO.42 光之国龙套奥特曼</div>
+                  <div class="box-content"><img src="img/Ultraman/龙套.PNG"></div>
+                </div>             
+          </div><!--r-->
+              
+            
+          </div><!--container-->
+        </div><!--tab-pane-->
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="container">
+            <div class="r">
+              <div class="box">
+                  <div class="box-top">NO.1 雷欧</div>
+                  <div class="box-content"><img src="img//Ultraman/12.雷欧.png"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.2 赛罗</div>
+                <div class="box-content"><img src="img/赛罗.jpg"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.3 高斯</div>
+                <div class="box-content"><img src="img/Ultraman/10.高斯.jpg"></div>
+              </div>
+              <div class="box">
+                  <div class="box-top">NO.3 杰斯提斯</div>
+                  <div class="box-content"><img src="img/Ultraman/10.杰斯提斯.jpg"></div>
+              </div>
+              <div class="box">
+                  <div class="box-top">NO.4 奈克赛斯</div>
+                  <div class="box-content"><img src="img/Ultraman/11.奈克赛斯.jpg"></div>
+              </div>
+          </div><!--r-->
+           <div class="r">
+              <div class="box">
+                  <div class="box-top">NO.5 奥特之父</div>
+                  <div class="box-content"><img src="img/Ultraman/9.奥特之父.jpg"></div>
+              </div>
+              <div class="box">
+                  <div class="box-top">NO.6 佐菲</div>
+                  <div class="box-content"><img src="img/Ultraman/15.佐菲.jpg"></div>
+              </div>
+              <div class="box">
+                  <div class="box-top">NO.7 赛文</div>
+                  <div class="box-content"><img src="img/Ultraman/NO.13 赛文.jpg"></div>
+              </div>
+              <div class="box">
+                  <div class="box-top">NO.8 初代</div>
+                  <div class="box-content"><img src="img/Ultraman/14.初代.jpg"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.9 泰罗</div>
+                <div class="box-content"><img src="img/Ultraman/16.泰罗.jpg"></div>
+             </div>
+          </div><!--r-->
+          <div class="r">
+                <div class="box">
+                  <div class="box-top">NO.10 艾斯</div>
+                  <div class="box-content"><img src="img/Ultraman/16.艾斯.jpg"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.10 阿斯特拉</div>
+                <div class="box-content"><img src="img/Ultraman/25.阿斯特拉.jpg"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.11 梦比优斯</div>
+                <div class="box-content"><img src="img/Ultraman/17.梦比优斯.jpg"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.11 麦克斯</div>
+                <div class="box-content"><img src="img/Ultraman/18.麦克斯.jpg"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.12 盖亚</div>
+                <div class="box-content"><img src="img/Ultraman/19.盖亚.jpg"></div>
+              </div>
+          </div><!--r-->
+          <div class="r">
+              <div class="box">
+                <div class="box-top">NO.12 阿古茹</div>
+                <div class="box-content"><img src="img/Ultraman/19.阿古茹.jpg"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.13 爱迪</div>
+                <div class="box-content"><img src="img/Ultraman/23.爱迪.jpg"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.14 杰克</div>
+                <div class="box-content"><img src="img/Ultraman/23.杰克.jpg"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.15 希卡利</div>
+                <div class="box-content"><img src="img/Ultraman/NO.20 希卡利.jpg"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.16 杰诺</div>
+                <div class="box-content"><img src="img/Ultraman/24.杰诺.jpg"></div>
+              </div>
+          </div><!--r-->
+          <div class="r">
+                <div class="box">
+                  <div class="box-top">NO.17 奈欧斯</div>
+                  <div class="box-content"><img src="img/Ultraman/26.奈欧斯.jpg"></div>
+                </div>
+                <div class="box">
+                  <div class="box-top">NO.17 赛文21</div>
+                  <div class="box-content"><img src="img/Ultraman/26.赛文21.jpg"></div>
+                </div>
+                <div class="box">
+                  <div class="box-top">NO.18 维克特利</div>
+                  <div class="box-content"><img src="img/Ultraman/6.维克特利.jpg"></div>
+                </div>
+                <div class="box">
+                  <div class="box-top">NO.19 银河</div>
+                  <div class="box-content"><img src="img/Ultraman/7.银河.jpg"></div>
+                </div>
+                <div class="box">
+                  <div class="box-top">NO.20 利布特</div>
+                  <div class="box-content"><img src="img/Ultraman/利布特.jpg"></div>
+                </div>
+          </div><!--r-->
+          <div class="r">
+                <div class="box">
+                  <div class="box-top">NO.21 泰伽</div>
+                  <div class="box-content"><img src="img/泰伽奥特曼.jpeg"></div>
+                </div>
+                <div class="box">
+                  <div class="box-top">NO.22 欧布</div>
+                  <div class="box-content"><img src="img/Ultraman/4.欧布奥特曼.jpg"></div>
+                </div>
+                <div class="box">
+                  <div class="box-top">NO.23 捷德</div>
+                  <div class="box-content"><img src="img/Ultraman/2.捷德.png"></div>
+                </div>
+                <div class="box">
+                  <div class="box-top">NO.24 艾克斯 </div>
+                  <div class="box-content"><img src="img/Ultraman/5.艾克斯.png"></div>
+                </div>
+                <div class="box">
+                  <div class="box-top">NO.25 泽塔</div>
+                  <div class="box-content"><img src="img/泽塔.jpeg"></div>
+                </div>                
+          </div><!--r-->
+          <div class="r">
+              <div class="box">
+                <div class="box-top">NO.26 乔尼亚斯</div>
+                <div class="box-content"><img src="img/Ultraman/32.乔尼亚斯.jpg"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.27 迪迦</div>
+                <div class="box-content"><img src="img/Ultraman/22.迪迦.png"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.27 戴拿</div>
+                <div class="box-content"><img src="img/Ultraman/21.戴拿奥特曼.jpg"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.28 罗索</div>
+                <div class="box-content"><img src="img/Ultraman/8.罗索奥特曼.jpg"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.28 布鲁</div>
+                <div class="box-content"><img src="img/Ultraman/8.布鲁.png"></div>
+              </div>             
+         </div><!--r-->
+         <div class="r">
+              <div class="box">
+                <div class="box-top">NO.29 葛雷</div>
+                <div class="box-content"><img src="img/Ultraman/27.葛雷.jpg"></div>
+              </div>   
+              <div class="box">
+                <div class="box-top">NO.30 帕瓦特</div>
+                <div class="box-content"><img src="img/Ultraman/28.帕瓦特.png"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.31 纳伊斯</div>
+                <div class="box-content"><img src="img/Ultraman/29.纳伊斯.jpg"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.31 哉阿斯</div>
+                <div class="box-content"><img src="img/Ultraman/29.哉阿斯.jpg"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.32 尤莉安</div>
+                <div class="box-content"><img src="img/Ultraman/30.尤莉安.png"></div>
+              </div>               
+        </div><!--r-->
+        <div class="r">
+              <div class="box">
+                <div class="box-top">NO.33 奥特之母</div>
+                <div class="box-content"><img src="img/Ultraman/31.奥特之母.jpg"></div>
+              </div> 
+              <div class="box">
+                <div class="box-top">NO.34 格丽乔</div>
+                <div class="box-content"><img src="img/Ultraman/格丽乔.jpg"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.35 索拉</div>
+                <div class="box-content"><img src="img/Ultraman/索拉奥特曼.jpg"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.36 史考特</div>
+                <div class="box-content"><img src="img/Ultraman/33.史考特.jpg"></div>
+              </div>
+              <div class="box">
+                <div class="box-top">NO.37 查克</div>
+                <div class="box-content"><img src="img/Ultraman/34.查克.jpg"></div>
+              </div>             
+       </div><!--r-->
+       <div class="r">
+            <div class="box">
+              <div class="box-top">NO.38 贝斯</div>
+              <div class="box-content"><img src="img/Ultraman/35.贝斯.jpg"></div>
+            </div> 
+            <div class="box">
+              <div class="box-top">NO.39 艾米娅</div>
+              <div class="box-content"><img src="img/Ultraman/艾米娅奥特曼.jpg"></div>
+            </div>
+            <div class="box">
+              <div class="box-top">NO.40 博伊</div>
+              <div class="box-content"><img src="img/Ultraman/博伊.jpg"></div>
+            </div>
+            <div class="box">
+              <div class="box-top">NO.41 光之国龙套奥特曼</div>
+              <div class="box-content"><img src="img/Ultraman/龙套.PNG"></div>
+            </div>            
+      </div><!--r-->
+          </div><!--container-->
+        </div>
+      </div>
+
+        <span class="mao"><a href="#mao"><i class="fa fa-2x fa-angle-double-up" aria-hidden="true"></i></a></span>
+ 
+    <script src="Swiper-2.7.6/demos/js/jquery-1.10.1.min.js"></script>
+    <script src="Swiper-2.7.6/dist/idangerous.swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="JS/translate.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container',{
+          pagination: '.pagination',
+          paginationClickable: true,
+          slidesPerView: 6,
+          loop: true
+        })
+
+        var san=document.querySelectorAll(".san");
+        for(var i=0;i<san.length;i++){
+          if(san[i].innerText=="新生代"){
+              san[i].style.backgroundColor="cornflowerblue";
+          }
+          else if(san[i].innerText=="昭和系"){
+            san[i].style.backgroundColor="#750000"
+          }
+          else{
+            san[i].style.backgroundColor="#019858"
+          }
+         
+        }
+
+   $("#move-btn").click(function(){
+      $(".move-bar").toggle("slow");
+   });
+
+      
+        </script>
+    
+</body>
+</html>

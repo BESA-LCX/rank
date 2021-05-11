@@ -1,0 +1,414 @@
+  /* Demo Styles */
+  #bd {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    background-color: rgba(5, 4, 4, 0.835);
+  }
+  .swiper-container {
+    padding: 5px;
+    margin-top: 80px;
+    width: 96%;
+    margin: auto;
+   height: 270px;
+    color: #fff;
+    text-align: center;
+   border-top:1px solid #BEBEBE	;
+   border-bottom:1px solid #BEBEBE	
+    
+  }
+  .swiper-wrapper{
+    animation: mymove 10s infinite;
+  }
+  @keyframes mymove{
+    0%{left: 0px;}
+    50%{left: -50%;}
+    100%{left: -135%;}
+  }
+  
+  /*.red-slide {
+    background: #ca4040;
+  }
+  .blue-slide {
+    background: #4390ee;
+  }
+  .orange-slide {
+    background: #ff8604;
+  }
+  .green-slide {
+    background: #49a430;
+  }
+  .pink-slide {
+    background: #973e76;
+  }*/
+  .swiper-slide{
+      position: relative;
+      margin-left: 10px;
+      z-index: -100;
+  }
+  .san{
+      position: absolute;
+      width: 20%;
+      height: 9%;
+      border-radius: 0px 10px 10px 0px;
+      background-color: cornflowerblue;
+      top: 0;
+      left: 0;
+     /* border:30px solid transparent;
+      border-top-color: tomato;
+      border-left-color: tomato;*/
+  }/*三角形*/
+  
+  .pagination {
+    position: absolute;
+    z-index: 20;
+    left: 10px;
+    bottom: 10px;
+  }
+  .swiper-pagination-switch {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background: #222;
+    margin-right: 5px;
+    opacity: 0.8;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+  .swiper-visible-switch {
+    background: #aaa;
+  }
+  .swiper-active-switch {
+    background: #fff;
+  }
+  .nav-item{
+    margin: 0;
+    padding: 0;
+  }
+  .nav-link{
+    height: 100%;
+    width: 100%;
+    line-height: 30px;
+    color: white;
+  }
+  .nav-link:hover{
+    color: white;
+  }
+  .box{
+    float: left;
+    margin-left: 10px;
+    width: 18%;
+   height: 270px;
+    /*background-color:#272727;*/
+    box-shadow: 2px 2px 2px  #000000d5;
+    -webkit-box-shadow:2px 2px 2px  #000000d5;
+    -moz-box-shadow:2px 2px 2px  #000000d5;
+    -ms-box-shadow:2px 2px 2px  #000000d5;
+    margin-top: 10px;
+    padding: 5px;
+    overflow: hidden;
+  }
+  .box:hover .box-content{
+    cursor: pointer;
+    transition: 1s;
+    /*transform: rotateY(360deg);  3D翻转*/
+   /* transform: scale(1.2,1.2,1.2); /*3D放大*/
+    transform: scale(1.3,1.3);
+    box-shadow: none;
+  }
+  .box-top{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(5, 129, 82);
+    text-align: center;
+    line-height: 30px;/*媒体查询*/
+  }
+  .box-content{
+    width: 100%;
+    height: 90%;
+   /* background-color: darkgoldenrod;*/
+  }
+  .box-content>img{
+    width: 100%;
+    height: 100%;
+  }
+  #dian{
+    background-color:white;
+    color:red;
+  }
+  .r{
+    display: flex;
+  }
+  .mao{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    top: 80%;
+    right: 0;
+    background-color: black;
+    opacity: 0.6;
+    border-radius:5px;
+  }
+  .mao>a{
+    display: block;
+    line-height: 40px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+  }
+   #move-btn{
+    width: 50px;
+    height: 30px;
+    position: fixed;
+    z-index: 1000;
+    top: 30%;
+    left: 0;
+    background-color: black;
+    border-style: none;
+    color: white;
+    display: none;
+  }
+  .move-bar{
+    position: fixed;
+    width: 50px;
+    top: 35%;
+    left: 0;
+    background-color: black;
+    display: none;
+    z-index: 1000;
+    
+  }
+  #s1,#s2,#s3,#s4,#s5,#s6,#s7{
+    font-size: 12px;
+    line-height: 30px;
+  }
+  #pills-tab{
+    position: sticky;
+    -webkit-positon:sticky;
+    -moz-position: sticky;
+    -ms-position:sticky;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    font-size: 14px;
+    opacity: 0.7;
+    background-color: #4F4F4F;
+    z-index: 100;
+  }
+  .tip{
+    text-align: center;
+    color: coral;
+  }
+  .link0:hover{
+     background-color: white;
+     color:red;
+  }
+  .card-header{
+    height: 300px;
+}
+.card-body{
+    text-indent: 2em;
+    font-size: 16px;
+}
+#display-item{
+  display: none;
+}
+.bar-right{
+  position: fixed;
+  right: 0;
+  top: 20%;
+  z-index: 1000;
+  background-color: black;
+  opacity: 0.8;
+  width: 1%;
+  transition: all 1.2s ease;
+}
+.bar-right:hover{
+  width: 3%;
+}
+.bar-right-item{
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  border-top:1px dotted white;
+}
+.bar-right-item>img{
+  width: 100%;
+  height: 100%;
+}
+.col-6 p{
+  margin: 0;
+}
+h5 span{
+  font-size: 14px;
+}
+.backtop{
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  bottom: 0;
+  left: 25%;
+  background-color: black;
+  opacity: 0.7;
+  border-radius: 5px;
+}
+.backtop>a{
+  display: block;
+  color: white;
+  line-height: 25px;
+  text-align: center;
+}
+/*.plane,.tank{
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  animation: first 2s;
+  display: none;
+}
+.plane{
+  z-index: 110;
+}
+.tank{
+  z-index: 1000;
+}
+   @keyframes first{
+      0%{ top: 70%;
+        left: 20%;}
+      100%{
+        top:10%;left:100%;
+      }
+   }
+*/
+  @media screen and (max-width:1360px) and (min-width:1080px){
+    .swiper-container,.box{
+      height: 270px;
+    }
+    .tip{
+      font-size: 15px;
+    }
+    .card-header{
+      height: 300px;
+  }
+    
+  }
+  @media screen and (max-width:1080px) and (min-width:960px) {
+    .swiper-container,.box{
+      height: 250px;
+    }
+    .tip{
+      font-size: 14px;
+    }
+    .card-header{
+      height: 280px;
+  }
+    
+  }
+  @media screen and (max-width:960px) and (min-width:768px) {
+    .swiper-container,.box{
+      height: 220px;
+    }
+    .link{
+      font-size: 14px;
+    }
+    .box-top{
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .tip{
+      font-size: 12px;
+    }
+    .card-header{
+      height: 260px;
+  }
+  }
+  /*移动端*/
+  @media screen and (max-width:760px) and (min-width:375px){
+     .swiper-container,.box{
+       height: 170px;
+     }
+     .bar{
+       display: none;
+     }
+     .logo{
+       width: 100%;
+     }
+     .box-top{
+      font-size: 12px;
+      line-height: 20px;
+    }
+    #move-btn{
+      display: block;
+    }
+    .san{
+      width: 90%;
+      height: 8%;
+      font-size: 10px;
+      opacity: 0.8;
+    }
+    .tip{
+      font-size: 10px;
+    }
+    .card-header{
+      height: 180px;
+  }
+  .card-body{
+    font-size: 10px;
+  }
+  .nav-item>.nav-link{
+    font-size: 10px;
+  }
+  #display-item{
+    display: block;
+  }
+  }
+  /*移动端*/
+  @media screen and (max-width:375px) and (min-width:200px) {
+    .swiper-container,.box{
+      height: 140px;
+    }
+    .box-top{
+      font-size: 10px;
+      line-height: 18px;
+    }
+    .bar{
+      display: none;
+    }
+    .logo{
+      width: 100%;
+    }
+    #pills-tab{
+     justify-content: center;
+    }
+   .nav-link{
+     font-size: 10px;
+   }
+   #move-btn{
+     display: block;
+   }
+   .san{
+    width: 90%;
+    height: 8%;
+    font-size: 10px;
+    opacity: 0.8;
+  }
+  .tip{
+    font-size: 10px;
+  }
+  .card-header{
+    height: 160px;
+}
+.card-body{
+  font-size: 10px;
+}
+.nav-item>.nav-link{
+  font-size: 10px;
+}
+#display-item{
+  display: block;
+}
+    
+  }
+

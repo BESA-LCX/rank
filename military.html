@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>军事排名</title>
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/second.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body id="bd">
+    <div class="nav2" id="backtop">
+        <div class="logo"><a href="home.html" class="logo-link"><img src="img/logo1.png" width="150" height="50"></a></div>
+        <div class="bar">
+            <li class="bar-item">
+                <a href="" class="link">奥特曼排名</a>
+                <div id="san"></div><!--三角形-->
+                <div class="bar-second">
+                    <div class="bar-second-item"><a href="Ultraman.html" class="link-second">单体奥特曼综合实力排名</a></div>
+                    <div class="bar-second-item"><a href="Ultraman.html" class="link-second">单体奥特曼格斗能力排名</a></div>
+                </div>
+            </li>
+            <li class="bar-item">
+                <a href="" class="link">女性角色排名</a>
+                <div id="san"></div><!--三角形-->
+                <div class="bar-second">
+                    <div class="bar-second-item"><a href="nv_idol.html" class="link-second">av女优排名</a></div>
+                    <div class="bar-second-item"><a href="nv_idol.html" class="link-second">偶像排名</a></div>
+                    <div class="bar-second-item"><a href="nv_idol.html" class="link-second">女演员排名</a></div>
+                </div>
+            </li>
+            <li class="bar-item">
+                <a href="" class="link">海贼王排名</a>
+                <div id="san"></div><!--三角形-->
+                <div class="bar-second">
+                    <div class="bar-second-item"><a href="ONE_PIECE.html" class="link-second">海贼王人物实力排名</a></div>
+                </div>
+            </li>
+            <li class="bar-item">
+                <a href="military.html" class="link" id="dian">军事排名</a>
+            </li>
+            <li class="bar-item">
+                <a href="" class="link">语种切换</a>
+                <div id="san"></div><!--三角形-->
+                <div class="bar-second">
+                    <div class="bar-second-item"><a href="javascript:;" class="link-second" id="english">English</a></div>
+                    <div class="bar-second-item"><a href="javascript:;" class="link-second" id="chinese">中文</a></div>
+                    <div class="bar-second-item"><a href="javascript:;" class="link-second" id="japanese">日本語</a></div>
+                </div>
+            </li>
+        </div>
+    </div><!--nav3-->
+<!--右侧滑动分享栏-->
+    <div class="bar-right">
+        <p class="text-center text-white mt-2">分享</p>
+       <div class="bar-right-item"><img src="img/Facebook.png" alt="Facebook" title="Facebook"></div>
+       <div class="bar-right-item"><img src="img/Twitter.png" alt="Twitter" title="Twitter"></div>
+       <div class="bar-right-item"><img src="img/line.png" alt="line" title="line"></div>
+       <div class="bar-right-item"><img src="img/wechat.png" alt="wechat" title="wechat"></div>
+       <div class="bar-right-item"><img src="img/qq空间.jpg" alt="QQ空间" title="QQ空间"></div>
+       <div class="bar-right-item"><img src="img/新浪.jpg" alt="新浪" title="新浪"></div>
+    </div>
+
+
+<div class="row mt-2">
+    <div class="col-3 m-0 p-0">
+        <ul class="nav nav-pills d-flex flex-column justify-content-start mb-3" id="pills-tab" role="tablist" style="height: 100vh;">
+            <li class="nav-item" role="presentation">
+            <a class="nav-link text-center active army" id="pills-home-tab" data-toggle="pill" href="#army" role="tab" aria-controls="pills-home" aria-selected="true">全球综合军力排名</a>
+            </li>
+            <li class="nav-item" role="presentation">
+            <a class="nav-link text-center air" id="pills-profile-tab" data-toggle="pill" href="#air" role="tab" aria-controls="pills-profile" aria-selected="false">全球空中力量排名</a>
+            </li>
+            <li class="nav-item" role="presentation">
+            <a class="nav-link text-center earth" id="pills-contact-tab" data-toggle="pill" href="#earth" role="tab" aria-controls="pills-contact" aria-selected="false">全球陆军实力排名</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link text-center h-navy" id="pills-contact-tab" data-toggle="pill" href="#h-navy" role="tab" aria-controls="pills-contact" aria-selected="false">全球核海军实力排名</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link text-center c-navy" id="pills-contact-tab" data-toggle="pill" href="#c-navy" role="tab" aria-controls="pills-contact" aria-selected="false">全球常规海军实力排名</a>
+            </li>
+            <li class="nav-item" id="display-item">
+                <a class="nav-link text-center link0" href="Ultraman.html">奥特曼实力排名</a>
+            </li>
+            <li class="nav-item" id="display-item">
+                <a class="nav-link text-center link0" href="nv_idol.html">女性角色排名</a>
+            </li>
+            <li class="nav-item" id="display-item">
+                <a class="nav-link text-center link0" href="ONE_PIECE.html">海贼王排名</a>
+            </li>
+            <li class="nav-item" id="display-item">
+                <a class="nav-link text-center link0" href="javascript:;" id="s5">English</a>
+            </li>
+            <li class="nav-item" id="display-item">
+                <a class="nav-link text-center link0" href="javascript:;" id="s6">中文</a>
+            </li>
+            <li class="nav-item" id="display-item">
+                <a class="nav-link text-center link0" href="javascript:;" id="s7">日本語</a>
+            </li>
+
+        </ul>
+    </div><!--col-3-->
+    <div class="col-9 bg-light m-0">
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="army" role="tabpanel" aria-labelledby="pills-home-tab">
+            <p class="bg-danger float-right p-2 rounded text-white text-center" style="width: 50%;">全球综合军事实力排名(top10)</p>
+            <h5 class="text-success" style="clear: both;">NO.1 美国</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/us.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    美国军事是美利坚合众国的武装力量，一般简称美军，即对美国拥有的武装部队的统称，为现今世界上总体实力最为强大的军队。美国军队由美国陆军、美国海军、美国空军、美国海军陆战队以及美国海岸警卫队所构成。美军现役部队人数142.9995万人，其中陆军54.1291万人，海军37.1723万人，空军33.3772万人，海军陆战队19.5338万人。<span class="text-danger">陆军排名：NO.1 空军排名：NO.1 海军排名：NO.1</span>
+                </div>
+            </div>
+            <h5 class="text-success mt-2" style="clear: both;">NO.2 俄罗斯</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/Russia.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    俄罗斯联邦武装力量（Вооружённые Си́лы Росси́йской Федера́ции）是俄罗斯军事力量最主要的部分，其前身主要是苏联武装力量在俄罗斯苏维埃联邦社会主义共和国的驻军。俄罗斯联邦武装力量的最高指挥官为俄罗斯联邦总统，现任总统为弗拉基米尔·普京。俄罗斯联邦武装力量有102.7万人 [1]  ，加上国家近卫军、边防军、铁道军、联邦通信和情报信息部队等武装力量后总人数为201.9万人，综合军事实力世界第二，仅次于美国。<span class="text-danger">陆军排名：NO.3 空军排名：NO.4 海军排名：NO.2（核海军）NO.3（常规海军）</span>
+                </div>
+            </div>
+            <h5 class="text-success mt-2" style="clear: both;">NO.3 中国</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/China.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    中国人民解放军（简称：人民解放军、解放军，英文：People's Liberation Army of China，英文缩写：PLA）是中华人民共和国最主要的武装力量。中国人民解放军的最高军事机关为中央军事委员会，由陆军、海军、空军、火箭军、战略支援部队和联勤保障部队等军兵种组成 [2]  。中国人民解放军现役总人数约200万人，2018年中国的国防军费为11069.51亿元人民币，占GDP比例约1.3%。<span class="text-danger">陆军排名：NO.2 空军排名：NO.7 海军排名：NO.2（常规海军）NO.5（核海军）</span>
+                </div>
+            </div>
+            <h5 class="text-success mt-2" style="clear: both;">NO.4 印度</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/India.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    印度武装部队（天城文：भारतीय सशस्त्र सेनाएं，转写：Saśastra Sēnāēṃ）在印度共和国整体的军事组织而言，包括印度陆军、印度空军、印度海军，以及各种其他包括印度海岸防卫队、中央准军事部队和核战略司令部等支援服务机构。印度保持世界第4大武装力量，估计常规部队总兵力有1,325,000人。印度官方的国防预算达到468亿美元，但实际支出的军事费用，估计远远超过印度官方的数字统计。印度武装部队正在迅速扩大和现代化，在未来将有军事航天计划，则是正在积极开发导弹防御系统和强大的核武军事能力。<span class="text-danger">陆军排名：NO.4 空军排名：NO.9 海军排名：NO.8（常规海军）NO.6（核海军）</span>
+                </div>
+            </div>
+            <h5 class="text-success mt-2" style="clear: both;">NO.5 法国</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/France.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    法国军队大致包含法国陆军、法国海军、法国空军和法国国家宪兵队。法国总统是三军统帅，军队主要任务是防卫法国领土，第二是保卫亲法国海外势力，第三是维持世界稳定。公开资料中军队总人数是779,450（2006年资料，其中259,050 常备兵[1]，419,000 预备役，101,400国家宪兵队），法军人数上是欧盟最大军队暨世界第13大军队。法国常备军费开支仅次于美国和中华人民共和国，世界排行第三（以美元计，不考量各国物价），也是世界核武第三多的军力，只在美国和俄罗斯之后。<span class="text-danger">陆军排名：NO.5 空军排名：NO.6 海军排名：NO.5（常规海军）NO.4（核海军）</span>
+                </div>
+            </div>
+            <h5 class="text-success mt-2" style="clear: both;">NO.6 日本</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/Japan.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    日本自卫队（简称：自卫队，英文：The Japan Self-Defense Force，英文缩写：JSDF）是日本国最主要的武装力量。日本自卫队的最高军事决策机构为内阁会议，现役部队由陆上自卫队、海上自卫队、航空自卫队组成。现日本自卫队现役总人数约25.5万人。日本的国防军费在2017年为5.1万亿日元（约合460亿美元），军费开支排名世界第五，占日本国内生产总值的1%。随着日本经济实力的迅速增强，日本自卫队建设得到长足发展，在“质重于量”和“海空优先”的建队方针指导下，自卫队已发展成为一支装备精良、训练有素、作战能力较强的武装力量。<span class="text-danger">陆军排名：NO.7 空军排名：NO.8 海军排名：NO.4（常规海军）</span>
+                </div>
+            </div>
+            <h5 class="text-success mt-2" style="clear: both;">NO.7 韩国</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/south Korea.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    大韩民国国军（韩语：대한민국국군，Republic of Korea Armed Forces，缩写为ROK Armed Forces）是大韩民国的国家军队。除大韩民国预备军（Republic of Korea Reserve Forces，韩语：대한민국 예비군）外，还包含大韩民国陆军（韩语：대한민국 육군）大韩民国海军（韩语：대한민국 해군）大韩民国海军陆战队（韩语：대한민국 해병대）大韩民国空军（韩语：대한민국 공군）。拥有现役总兵力共75 万人。此外，拥有预备役部队450 万人，民防卫队350万人，海岸警卫队约1万余名。韩国军队是继承了美国海军的模式，武器装备的现代化程度高。<span class="text-danger">陆军排名：NO.9 空军排名：NO.10 海军排名：NO.9（常规海军）</span>
+                </div>
+            </div>
+            <h5 class="text-success mt-2" style="clear: both;">NO.8 英国</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/uk.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    虽然英国已经不再是那个强大的日不落帝国，但仍然是联合国安理会五常之一，其军事力量仍然在世界上占有一席之地，军工技术仍然首屈一指。虽然英国这些年不断的裁军，军备数量有所缩减，但是仍然是一支排名世界前列的军事力量。英国军队总兵力为21万多人，虽然军队规模来看在世界上并不起眼，但是武器装备水平并不弱，尤其是海军仍然是世界先进水平。<span class="text-danger">陆军排名：NO.6 空军排名：NO.5 海军排名：NO.6（常规海军）NO.3（核海军）</span>
+                </div>
+            </div>
+            <h5 class="text-success mt-2" style="clear: both;">NO.9 土耳其</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/Turkey.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    土耳其武装力量由正规军和准军事部队组成。正规军分陆、海、空三个军种。现设部队63．9万人。预备役部队：37．87万人（41岁以下），其中陆军25．87万人，海军5．5万人，空军6．5万人。准军事部队：18．22万人。宪兵和国民警卫队18万人（其中预备役5万人），海岸警卫队2200人。中东地区军事实力最强的国家。<span class="text-danger">陆军排名：NO.10 空军排名：NO.10</span>
+                </div>
+            </div>
+            <h5 class="text-success mt-2" style="clear: both;">NO.10 德国</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/German.jpeg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    德国联邦国防军（德语：Bundeswehr）为德意志联邦共和国武装力量的统称，由陆军、海军、空军、联合后勤总部（德语Streitkräftebasis）及联合医疗部队（德语：Zentraler Sanitätsdienst）所组成。现在的德军仍是世界上30个最强大的军队之一。陆军总兵力为80,673人（包括60,863人的常备军；3,810人的驻外部队；16,000人的预备役部队）海军兵力为16,414人，空军兵力为26,000人。<span class="text-danger">陆军排名：NO.8 空军排名：NO.9</span>
+                </div>
+            </div>
+        </div><!--tab-pane-->
+        <div class="tab-pane fade" id="air" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <p class="bg-danger float-right p-2 rounded text-white text-center" style="width: 50%;">全球空中力量排名(top14)</p>
+            <h5 class="text-success mt-2" style="clear: both;">NO.1 美国空军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/美国空军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    美国空军（United States Air Force，缩写为USAF）是美国军队中的空军部分，成立于1947年9月18日。其任务是“通过空中和太空中的武力保护美国及其利益”。美国空军空军现役部队有332,800人，后备部队有71,400人，空中国民兵有106,700人，以及185,500名民间雇员。
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">查看装备<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></button> 
+                    <div class="row collapse" id="collapseExample1">
+                         <div class="col-6 border-right">
+                            <p>F-15C/D:235架</p><p>F-16C/D:941架</p><p>F-15E:220架</p><p>F-22A:186架</p><p>F-35A:300余架</p><p>B-1B:62架</p><p>B-2A:20架</p><p>B-52H:75架</p><p>A-10C:198架</p>
+                         </div>
+                         <div class="col-6">
+                            <p>直升机：160架</p><p>侦察机、预警机：137架</p><p>特种作战飞机：103架</p><p>空中加油机:278架</p><p>教练机:1284架</p><p>运输机:529架</p><p>无人驾驶飞机约:160架</p>
+                         </div>
+                     </div>
+                </div>
+            </div>
+            <h5 class="text-success mt-2" style="clear: both;">NO.2 美国海军航空兵</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/美国海军航空兵.jpeg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    美国海军航空兵拥有约4,000架飞机。战斗机/电子战机：978架 预警机/反潜机：234架 运输机/加油机：148架 教练机：657架 直升机：656架 无人机：256架。
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">查看装备<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></button>
+                    <div class="row collapse" id="collapseExample2">
+                        <div class="col-6 border-right">
+                           <p>F/A-18E/F：546架</p><p>F/A-18A/B/C/D：284架</p><p>F-35C：20架</p><p>EA-18G：126架</p><p>EA-6B：18架</p><p>E-2C：44架</p><p>E-2D：27架</p><p>P-8A：48架</p><p>P-3C：87架</p><p>EP-3E：12架</p>
+                        </div>
+                        <div class="col-6">
+                           <p>C-2：35架</p><p>C-130T/KC-130T：31架</p><p>C-40/37/20/26/38/12：82架</p><p>教练机：657架</p><p>MH-60R/S：483架</p><p>SH-60F/HH-60H：15架</p><p>MH-53E/0H-53：32架</p><p>TH-57：126架</p><p>MQ-4C/RQ-4A：7架</p><p>MQ-8：41架</p><p>RQ-15A：75架</p><p>RQ-23A：131架</p><p>X-47B</p>
+                        </div>
+                    </div><!--row-->
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.3 美国国民警卫队空军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/美国国名警卫队空军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    美国国民警卫队（United States National Guard）简称为联邦国民兵，是美利坚武装力量的重要后备力量。空军国民警卫队。空军国民警卫队现编有92个中队，飞机1700多架，共11.81万人。
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">查看装备<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></button>
+                    <div class="row collapse" id="collapseExample3">
+                        <div class="col-6 border-right">
+                           <p>F-22A：20架</p><p>F-15C/D：171架</p><p>F-16C/D：335架</p><p>A-10C：85架</p><p>MQ-9A：14架</p><p>MQ-1B：34架</p><p>E-8A/C：17架</p><p>MC-130P：4架</p><p>EC-130J：7架</p>
+                        </div>
+                        <div class="col-6">
+                           <p>WC-130H：8架</p><p>RC-26B：11架</p><p>C-17A：34架</p><p>LC-130H：10架</p><p>C-40C/C-32B/C-21A：7架</p><p>HH-60G：17架</p><p>C-130H/J：156架</p><p>HC-130N/P：9架</p><p>KC-135R/T：175架</p>
+                        </div>
+                    </div><!--row-->
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.4 南岛皇家空军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/南岛皇家空军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    南岛皇家空军成立于1962年，主要负责防空 战术攻击 远程作战等任务，是北约第二大空中力量。总计1300余架（无人机、教练机不计时）作战飞机，机种齐全：720架战斗机 120架攻击机 60轰炸机 39架侦察机 119架加油机 78架预警机 数百架无人机 80架电子战机 92架运输机。装备一流，训练水平极高 参过各大小规模战争及军事行动。空战战历中击落过敌机有米格29 米格21 米格23 苏-22 苏-27 苏-24。实战经验丰富；是世界上除美国以外的装备最现代化的空中武装力量，空军作战实力位居全球第二。近两年装备了60架国产先进隐身战机ELOZ-5000。隐身战机规模也仅次于美军。空军现役部队约9万人。
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">查看装备<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></button>
+                    <div class="row collapse" id="collapseExample4">
+                        <div class="col-6 border-right">
+                           <p>F-15C/D/J/DJ：120架</p><p>F-16C/D：100架</p><p>F/A-18C/D：126架</p><p>F-15E：60架</p><p>F-15I：12架</p><p>F-15SG/SN：30架</p><p>AFTI-16：32架</p><p>F-16XL：20架</p><p>E-16E/F：50架</p><p>F-16V/IN：34架</p><p>JAS-39C：70架</p><p>F-2B：20架</p>
+                        </div>
+                        <div class="col-6">
+                            <p>F-35A：40架</p><p>Typhoon：46架</p><p>Rafale M：20架</p><p>LC-001：60架</p><p>EA-18G：20架</p><p>LC-002：120架</p><p>E-2C：44架</p><p>E-3B：34架</p><p>MV-200G：92架</p><p>KC-135N：72架</p><p>KC-767J：44架</p><p>KC-10A：3架</p><p>FLQ-4/4K：数百架</p><p>DA-6E：39架</p>
+                        </div>
+                    </div><!--row-->
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.5 以色列空军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/以色列空军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    以色列空军，是以色列国防军的空军。现任空军司令是伊扎尔·谢克迪少将。拥有大约900架飞机，主要空中战斗的机种是F-15战斗机和F-16战斗机。2021年2月，以色列空军发布主战机种的高清大图，涵盖战斗机、直升机、无人机等，还包括最新装备的F-35战斗机。以色列空军拥有仅次于美军的全球第二的飞行员训练水平，实战经验极为丰富，战绩辉煌，创造多次空战神话。是中东地区首屈一指的空中力量。
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">查看装备<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></button>
+                    <div class="row collapse" id="collapseExample5">
+                        <div class="col-6 border-right">
+                           <p>F-35I：22架</p><p>F-15C/D/I：83架</p><p>F-16C/D/I：220架</p><p>F-15A/B：38架</p><p>F-16A/B：75架</p><p>“幼狮”C2／C7型：120架</p><p>A-4N：180架</p><p>RF-4E：14架</p><p>“幼狮”RC2型：6架</p><p>“波音”707型：4架（运输机）</p><p>C-47型：12架</p><p>C-130H型：24架</p><p>IAI-201型：7架</p><p>AH-1/1F：53架</p><p>“休斯”500MD：35架</p><p>AH-64A：42架</p><p>HH-65A：1架</p><p>AS-565型：4架</p>
+                           <p></p>
+                        </div>
+                        <div class="col-6">
+                            <p>“波音”707型：2架（预警机）</p><p>波音”707型：6架（电子飞机）</p><p>RC-12D：6架</p><p>IAI-200型：3架</p><p>Do-28型：15架</p><p>“空中大王”2000型：6架</p><p>IAI-1124型：3架</p><p>“波音”707型：3架(加油机)</p><p>KC-130H型：5架（加油机）</p><p>“岛民”式：2架</p><p>“色斯纳”U-206型：20架</p><p>“空中女王”80型：8架</p><p>教练机：152架</p><p>运输直升机：143架。</p><p>无人驾驶飞行器：“侦察兵”、“先锋”、“搜索者”、“火蜂”、“萨姆森”(SAMSON)、“迪莱拉”、“猎人”、“银箭”、等若干架。</p>
+                        </div>
+                    </div><!--row-->
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.6 俄罗斯空军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/俄罗斯空军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    俄罗斯空军（俄语：Военно-воздушные силы России, ВВС，俄语罗马化：Voyenno-vozdushnye sily Rossii, VVS）是世界第二大空中武装力量，拥有4000多架飞机。现任最高指挥官为维克托·邦达列夫。
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">查看装备<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></button>
+                    <div class="row collapse" id="collapseExample6">
+                        <div class="col-6 border-right">
+                           <p>su-57：11架</p><p>su-35BM/S：98架</p><p>su-30SM：114架</p><p>su-30M2：20架</p><p>su-30：2架</p><p>su-27/SM/SM3/SMK：485架</p><p>mig-29/UB/UBM：254架</p><p>mig-31:135架</p><p>su-34:130架</p><p>su-25:145架</p><p>su-24:130架</p><p>MIG-25R：40架</p><p>TU-22：42架</p><p>TU-160：17架</p><p>TU-95：45架</p>
+                           <p></p>
+                        </div>
+                        <div class="col-6">
+                            <p>IL-76MD：210架</p><p>AN-124：26架</p><p>AN-22：11架</p><p>AN-12：121架</p><p>AN-24/26：76架</p><p>AN-30：18架</p><p>AN-72：46架</p><p>AN-140/148：24架</p><p>IL-18：9架</p><p>IL-22：22架</p><p>IL-38：51架</p><p>IL-62：18架</p><p>TU-134/TU-154：194架</p><p>IL-78：18架(加油机)</p><p>A-50：25架（预警机）</p><p>教练机：384架</p>
+                        </div>
+                    </div><!--row-->
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.7 英国皇家空军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/英国皇家空军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    英国皇家空军(Royal Air Force，简称RAF)起源于1911年，是英国的空军分支，亦是世界上历史最悠久的独立空军，负责英国防空和其它国际防务义务的武装机构。主要任务是：保卫领空、军事基地和重要目标的安全；支援登陆作战，空运部队与作战物资，空中侦察、电子对抗；支持北约盟军作战，与英国皇家海军共同负责北大西洋、北海和英领海安全。
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample">查看装备<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></button>
+                    <div class="row collapse" id="collapseExample7">
+                        <div class="col-6 border-right">
+                           <p>F-35B：17架</p><p>Typhoon“台风”：232架</p><p>狂风战机：120架</p><p>美洲虎攻击机：203架</p><p>鹞式GR9型战斗机</p><p>MQ-9：10架</p><p>雷电之神(隐身无人机)</p><p>RC-135W(侦察机)</p><p>Hawk T1：81架（教练机）</p>
+                        </div>
+                        <div class="col-6">
+                            <p>C-17A：15架</p><p>A-400M：23架</p><p>C-130J：14架</p><p>A330-MRTT：14架（加油机）</p><p>E-7：5架（预警机）</p><p>E-3D：6架（预警机）</p><p>EH-101直升机</p><p>CH-47直升机</p>
+                        </div>
+                    </div><!--row-->
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.8 法国空军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/法国空军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    法国空军（法语：Armee de l 'Air，简称ALA，英语：French Air Force）是法国武装部队的空军。它在1909年成立，初名“航空勤务队”，当时是隶属于法国陆军，于1933年成为一个独立的军事部门。法国空军当前操作658架各式飞机，有约8.34万人。2020年9月，法国空军已改名为法国空天军。
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample">查看装备<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></button>
+                    <div class="row collapse" id="collapseExample8">
+                        <div class="col-6 border-right">
+                           <p>Rafale“阵风” D/B/C：149架</p><p>幻影2000B/C/D/5F+幻影III/幻影F1：313架</p><p>“美洲虎”A型：120架</p><p>幻影2000N：60架（轰炸机）</p><p>“幻影”IVP型：6架（侦察机）</p><p>神经元无人机（隐身）</p><p>MQ-9无人机</p><p>直升机：89架</p>
+                        </div>
+                        <div class="col-6">
+                            <p>E-3F：4架（预警机）</p><p>“幻影”F-1CR型：40架（预警型）</p><p>“幻影”IVP型：5架（预警型）</p><p>C-135FR：11架（加油机）</p><p>KC-135F：3架</p><p>A-400M：18架</p><p>C-160：36架</p><p>C-130：14架</p>
+                        </div>
+                    </div><!--row-->
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.9 中国人民解放军空军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/中国空军.jpeg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    中国人民解放军空军（Air Force of the CPLA）于1949年11月11日正式成立，经过不断发展建设，中国空军已经发展成为一支由航空兵、地空导弹兵、高射炮兵、雷达兵、空降兵、电子对抗、气象等多兵种合成，由歼击机、强击机、轰炸机、运输机等多机种组成的现代化的高技术军种。主要任务是国土防空，支援陆、海军作战，对敌后方实施空袭，进行空运和航空侦察。
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample">查看装备<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></button>
+                    <div class="row collapse" id="collapseExample9">
+                        <div class="col-6 border-right">
+                           <p>歼-20：几十架</p><p>歼10A/B/C：400余架</p><p>su-27SK/歼-11A/B/D：346架</p><p>su-30MKK：76架</p><p>歼-16：约100架</p><p>su-35S：24架</p><p>歼轰-7：216架</p><p>轰-6：120架</p><p>歼-7：388架（二代机）</p><p>歼-8：96架</p><p>教练-7：35架</p><p>练-8：190架</p>
+                        </div>
+                        <div class="col-6">
+                            <p>空警-2000：4架</p><p>空警-200：7架</p><p>空警-500：9架</p><p>运-7：43架</p><p>运-8/9：69架</p><p>运-20：48架</p><p>伊尔-76：23架</p><p>运-8EW：16架</p><p>安-30：3架</p><p>图-154：8架</p><p>轰油-6U：20架（加油机）</p><p>伊尔-78MP：3架</p><p>教练-15：92架</p>
+                        </div>
+                    </div><!--row-->
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.10 日本航空自卫队</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/日本航空自卫队.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    日本航空自卫队（Japan Air Self-Defense Force），是日本自卫队下面的空中武装部队。由于受到二战后和平宪法的限制，其不能被称为日本空军。其主要由航空兵、防空导弹及雷达警戒部队组成，编制、武器都偏重防卫，不配备具有侵略性的战略轰炸机、弹道导弹、空中加油机等。然而，由于训练水平较高、武器精良、技术先进，加上与美军有密切的交流，日本航空自卫队已成为东亚地区一支重要的空中武装力量。2020年1月5日，日本航空自卫队拟改名为“航空宇宙自卫队”，2023年之前完成改名。
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample">查看装备<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></button>
+                    <div class="row collapse" id="collapseExample10">
+                        <div class="col-6 border-right">
+                           <p>F-35A：19架</p><p>F-2A/B：135架</p><p>F-15J/DJ：201架(J型157架，DJ 型44架)</p><p>F4-EJ：111架</p><p>RF-4EJ：27架</p><p>T-3：50架（教练机）</p><p>T-4：212架</p>
+                        </div>
+                        <div class="col-6">
+                            <p>E-2D：采购9架</p><p>E-2C：13架</p><p>E-767J：4架</p><p>C-1：25架</p><p>C-130H：90架</p><p>C-2：40架</p><p>UH-60J：31架</p><p>CH-47：15架</p><p>KC-767J：4架</p><p>KC-46A：生产中</p>
+                        </div>
+                    </div><!--row-->
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.11 德国联邦国防军空军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/德国空军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    德国联邦国防军空军是德意志联邦共和国国防军的分支军种，空军兵力为26,000人。属于北约空军，拥有较高的训练水平。
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample">查看装备<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></button>
+                    <div class="row collapse" id="collapseExample11">
+                        <div class="col-6 border-right">
+                           <p>Typhoon“台风”：180架</p><p>“狂风”战机：246架</p><p>“狂风”IDS战斗轰炸机：85架</p><p>2“狂风”ECR电子战/侦察机：28架</p><p>CH-53G（重型直升机）</p><p>空客A145M（重型直升机）</p><p>A-310 MRTT（加油机）：4架</p>
+                        </div>
+                        <div class="col-6">
+                            <p>C-160：45架</p><p>A-310：5架</p><p>A-400M：36架</p><p>T-37B：30架（教练机）</p><p>T-38A：35架</p><p>“霍克”：72部（地空导弹）</p><p>“罗兰”：89部（地空导弹）</p><p>“爱国者”：2部</p>
+                        </div>
+                    </div><!--row-->
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.12 印度空军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/印度空军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    印度空军（印地文：भारतीय वायु सेना；英文：Indian Air Force）是印度共和国武装力量军种之一，于1932年10月8日正式成立。实行空防合一体制。总统是名义上的武装力量统帅和印度空军的最高首长，但实际统领空军的是空军总司令，由空军总参谋长担任。主要任务是国土防空以及在与其他武装发生冲突时作出空中战争。规模排名世界第四。
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample12" aria-expanded="false" aria-controls="collapseExample">查看装备<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></button>
+                    <div class="row collapse" id="collapseExample12">
+                        <div class="col-6 border-right">
+                           <p>Rafale“阵风”：14架</p><p>su-30MKI：约260架</p><p>幻影2000：51架</p><p>LCA“光辉”：20架</p><p>MIG-29UPG：81架</p><p>MIG-27ML：83架</p><p>“美洲虎”M/S：105架</p><p>米格-21:82架</p><p>Mi-8/17：210架（直升机）</p><p>鹰式教练机：123架</p>
+                        </div>
+                        <div class="col-6">
+                            <p>A-50EI：3架（预警机）</p><p>费尔康：3架（预警机）</p><p>ERK-145：2架（预警机）</p><p>伊尔-78：6架（加油机）</p><p>C-17：11架（运输机）</p><p>伊尔-76：24架（运输机）</p><p>C-130J：11架（运输机）</p><p>安-32：97架（运输机）</p>
+                        </div>
+                    </div><!--row-->
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.13 韩国空军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/韩国空军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    韩国空军全称大韩民国空军（朝鲜语：대한민국 공군；英语：Republic of Korea Air Force），是韩国三军中的航空部队，由国防部指挥，主要任务是防卫韩国领空，次要任务是支援地面部队作战，包括提供空中支援和空中运输。韩国空军现役总人数从1992年的45000人增至52000人。预备役总人数约55000人。
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample13" aria-expanded="false" aria-controls="collapseExample">查看装备<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></button>
+                    <div class="row collapse" id="collapseExample13">
+                        <div class="col-6 border-right">
+                           <p>F-35A：20架</p><p>F-15K：62架</p><p>KF-16（F-16C/D）：180架</p><p>FA-50：60架</p><p>F-5E：195架</p><p>F-4D/E：130架</p><p>A-37B：23架</p><p>T-37C/T-33A：75架（教练机）</p><p>UH-60：15架（直升机）</p><p>贝尔(Bell)212：4架</p>
+                        </div>
+                        <div class="col-6">
+                            <p>RF-4C：18架（侦察机）</p><p>O-1A/-E：20架（电子攻击机）</p><p>RF-5A：5架（电子战机）</p><p>E737：4架（预警机）</p><p>T-50：20架（教练机）</p><p>T-41B：15架（教练机）</p><p>UH-1H：16架（直升机）</p><p>CH-47D：6架</p><p>超级美州豹：3架（直升机）</p>
+                        </div>
+                    </div><!--row-->
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.14 土耳其空军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/土耳其空军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    土耳其空军（TRUKISH AIR FORCE)是土耳其军队中的空军分部。为北约第三大空中力量，仅次于美国和英国。地处亚欧大陆的交界处的土耳其空军也是世界上几个较为强大的空中力量。土耳其空军兵力约为60 100人，装备飞机超过930架。
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample14" aria-expanded="false" aria-controls="collapseExample">查看装备<i class="fa fa-chevron-circle-down" aria-hidden="true"></i></button>
+                    <div class="row collapse" id="collapseExample14">
+                        <div class="col-6 border-right">
+                           <p>F-16C/D：240架</p><p>F-4E：约200架</p><p>F-5：125架</p><p>RF-4E：40架</p><p>E-737：4架（预警机）</p><p>KC-135-CRAG：7架（加油机）</p>
+                        </div>
+                        <div class="col-6">
+                            <p>C-130：13架</p><p>C-160：19架</p><p>CN-235：52架</p><p>A-400M：10架</p><p>哈比、苍鹰、MQ-1、MQ-9无人机：共100架</p><p>T-41/SF-260D/T-37/T-33/T-38/CN-125（教练机）</p>
+                        </div>
+                    </div><!--row-->
+                </div><!--card-body-->
+            </div><!--card-->
+        </div><!--tab-pane-->
+        <div class="tab-pane fade" id="earth" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <p class="float-right p-2 rounded text-white text-center" style="width: 50%;background-color: rgb(129, 106, 43);">全球陆军实力排名(top10)</p>
+            <h5 class="text-success mt-2" style="clear: both;">NO.1 美国陆军<span class="text-info ml-3">---------北美雄鹰</span></h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/美国陆军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    美国陆军（英语：United States Army），是美国武装力量的组成部分之一，主要负责陆地上的作战。它组建于1775年6月14日，2017全年预计有现役军人460,000名，美国国民警卫队（ARGN）335,000，美国陆军预备队（USAR）195,000名。GI是美国陆军在第二次世界大战时的别称。全球装备最先进，现代化实战经验最丰富，训练水平最高，世界上总人数第二，综合战斗力第一的地面武装部队。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.2 中国人民解放军陆军<span class="text-info ml-3">--------- 东方猛鹤</span></h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/中国陆军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    中国人民解放军陆军是人民解放军的主要军种，是陆地作战的主力，是人民解放军各军兵种中历史最久，在新中国建立前后的历次作战中发挥最出色的，也是社会主义现代化建设和各种抢险救灾中的中坚力量。中国人民解放军陆军现主要由步兵（摩托化步兵、机械化步兵）、炮兵（地面炮兵、高射炮兵）、装甲兵、工程兵、通讯兵、防化兵和侦察兵、电子对抗、汽车兵、测绘兵、气象兵等专业部队组成。解放军的主要作战部队包括9个装甲师、25个步兵师(其中2个负责两栖任务)和3个炮兵师；有33个步兵旅、9个装甲旅、15个炮兵旅和10个直升机团。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.3 俄罗斯陆军<span class="text-info ml-3">---------北方巨熊</span></h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/俄罗斯陆军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    俄罗斯陆军，即俄罗斯联邦陆军（俄语：Сухопутные войска Российской Федерации），在1991年底苏联解体时成立，中途经过多次改革，形成了目前的规模。继承了苏联主要军事遗产的俄罗斯陆军，拥有世界上一流的武器装备和军事技术。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.4 印度陆军<span class="text-info ml-3">---------南亚恶狼</span></h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/印度陆军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    印度陆军成立于1947年，是印度规模最大的武装力量，主要任务是确保国家安全和印度共和国免于遭受外来侵略和威胁，维护和平与安全。印度陆军还在自然灾害和其他干扰从事过人道救援行动。印度陆军拥有世界上第二大的常备军和最大的后备军队。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.5 法国陆军<span class="text-info ml-3">---------高卢雄鸡</span></h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/法国陆军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    法国陆军是现代法国军队中最大规模的作战部队，目前现役陆军人数约14万人，2018年军费总开支约443亿美元，占GDP的2.1%。总体来说，法国每年的国防预算还算稳定，依然拥有着较高的向全球投放力量的实力，而法国陆军也一直将全球化、国际化作为军事战略考虑的重心，在中非、乍得、马里、塞内加尔以及世界其他地方都有重兵部署。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.6 英国陆军<span class="text-info ml-3">---------不列颠雄狮</span></h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/英国陆军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    英国陆军British Army，是英国军队的陆上武装部队，组建于1707年。名义上说英国陆军是负责国防和履行国际间共同防御的部队，但300多年来英国陆军绝大部分时间都在进行海外军事行动并在海外长期驻防，世界上很多国家都曾经活跃着英国陆军的身影，如今经常被部署于海外执行作战或联合国维持和平行动。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.7 德国联邦国防军陆军<span class="text-info ml-3">---------战武黑鹰</span></h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/德国陆军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    德国陆军，德语： Deutsches Heer，是指德意志联邦国防军中的陆军部分，自二战结束分裂而成的西德与东德陆军所组成，历史可追溯至德意志统一前。德国是传统陆军强国，其实力与规模远比空军与海军大的许多，自德国统一至二战结束期间，德国陆军在质量与规模上长期一直是欧洲数一数二。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.8 日本陆上自卫队<span class="text-info ml-3">---------日出雄雉</span></h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/日本陆上自卫队.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    日本陆上自卫队是日本自卫队的陆上军事部队，归陆自司令部管辖，于东京东方的市川市。日本陆上自卫队要负责地面作战、地面防空、两栖登陆和近空空中支援作战。由于日本在战后受到《战后宪法》的规制，陆上自卫队被禁止使用弹道导弹、战略轰炸机等侵略型武装，并禁止于平时实施征兵制，人少却趋向小型高专业化。主要负责地面作战、地面防空、两栖登陆和近空空中支援作战。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.9 土耳其陆军<span class="text-info ml-3">---------沙漠雄鸫</span></h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/土耳其陆军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    强大的奥斯曼帝国军队是土耳其陆军的前身，如今的土耳其已是北约成员国之一，曾先后向世界各地派遣士兵参与了多项军事活动，例如阿富汗的行动，巴尔干的维和行动等等。土耳其武装部队乃北约第二大常设部队，仅次于美国军队，有五个分支超过一百万的军警人员的综合实力。目前的土耳其被认为是中东地区最强的军事力量，其现役陆军人数约25万人；近年来军费总开支约148亿美元。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.10 韩国陆军<span class="text-info ml-3">---------东亚傲虎</span></h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/韩国陆军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    韩国陆军，即大韩民国陆军（外文名대한민국 육군，Republic of Korea Army，ROKA），通称韩国陆军，是为大韩民国国军的陆上部队，也是韩国三军中规模最大的军种。韩国陆军成立于1948年9月5日，由其前身“南朝鲜国防警备队”（남조선국방경비대，South Korean Constabulary of Police Reserve）改编而成，本部设在忠清南道论山基地。
+                </div><!--card-body-->
+            </div><!--card-->
+        </div><!--tab-pane-->
+        <div class="tab-pane fade" id="h-navy" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <p class="float-right p-2 rounded text-white text-center" style="width: 50%;background-color: rgb(29, 27, 109);">全球核海军实力排名(top6)</p>
+            <h5 class="text-success mt-2" style="clear: both;">NO.1 美国海军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/美国核海军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                   美国海军现役装备72艘核潜艇。其中攻击型核潜艇（战术核潜艇）：50艘（弗吉尼亚级：19艘；海狼级：7艘；洛杉矶级：28艘）。弹道导弹核潜艇（战略核潜艇）：18艘（俄亥俄级：18艘；哥伦比亚级：12艘采购）。可发射“三叉戟”II D5核洲际导弹，战斧巡航导弹。拥有全球首屈一指的海基核打击力量。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.2 俄罗斯海军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/俄罗斯核海军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    俄罗斯现在有42艘核潜艇,其中攻击型核潜艇15艘（亚森级；阿库拉级；塞拉Ⅱ级）,巡航导弹核潜艇6艘（奥斯卡Ⅱ级；亚森级）,弹道导弹核潜艇16艘（北风之神级；台风级）、辅助核潜艇5艘（维克托级）。拥有全球第二的核打击力量。俄罗斯海基核力量是俄罗斯的王牌力量。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.3 英国皇家海军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/英国核海军.png" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    英国皇家海军现役装备11艘核潜艇；弹道导弹核潜艇：4艘（前卫级）；攻击型核潜艇：7艘（机敏级：3艘，特拉法尔加级：4艘）。其核潜艇武器主要由美国支持。可发射“三叉戟”II D5核洲际导弹，战斧巡航导弹。核潜艇技术仅次于美俄，位于全球第三。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.4 法国海军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/法国核潜艇.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    法国海军是欧洲唯一独立的海基核力量，军工十分强大。全球第三大核武库。现役装备10艘核潜艇；弹道导弹核潜艇（凯旋级：4艘）；攻击型核潜艇（红宝石级：6艘）。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.5 中国人民解放军海军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/中国核海军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    中国人民解放军海军现役装备14艘核潜艇。弹道导弹核潜艇：5艘（094型）；攻击型核潜艇：9艘（093型）。是世界第五大核武库。海基核武器为“巨浪”系列洲际弹道导弹。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.6 印度海军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/印度核潜艇.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    印度海军现役装备2艘核潜艇。都是国产战术攻击型核潜艇：（2艘ATV核潜艇）。
+                </div><!--card-body-->
+            </div><!--card-->
+        </div><!--tab-pane-->
+        <div class="tab-pane fade" id="c-navy" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <p class="float-right p-2 rounded text-white text-center" style="width: 50%;background-color: rgb(20, 162, 245);">全球核海军实力排名(top10)</p>
+            <h5 class="text-success mt-2" style="clear: both;">NO.1 美国海军<span class="text-danger ml-3">---------全球控制海军</span></h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/us.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    美国海军下设七个舰队，约500,000现役和预备役军人、12艘超级航母，279艘现役军舰72艘潜艇和4,000架飞机，是世界上规模最庞大、吨位最高、装备最先进、总体实力超过其他国家海军实力总和的世界最强海军。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.2 中国人民解放军海军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/中国海军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    中国人民解放军海军现役军人约24万人，2艘航母，舰船300余艘，60余艘潜艇，飞机600余架，现役舰艇总吨位仅次于美国，是西太平洋地区最大规模的海上武装力量。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.3 俄罗斯海军<span class="text-danger ml-3">---------全球挑战海军</span></h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/俄罗斯海军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    俄罗斯海军的船只的国际编号为RFS。俄罗斯是传统的海上强国。自1696年海军组建以来，俄罗斯海军已有300多年的历史。俄罗斯海军由北方舰队、太平洋舰队、黑海舰队、波罗的海舰队四大舰队和里海区舰队、波罗的海舰队所属的加里宁格勒军事集群组成。俄罗斯海军拥有22万人，1艘航母，舰艇102艘，潜艇59艘。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.4 日本海上自卫队<span class="text-danger ml-3">---------全球出动海军</span></h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/日本海上自卫队.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    日本海上自卫队是隶属于日本防卫省的特别机关，在地位上相当于他国的海军，即日本国的海上武装力量。日本海上自卫队总兵力达到4.3万人。现役装备航母4艘，舰艇163艘，潜艇22艘，飞机330架。是世界上装备最现代化的海军之一。训练水平高，与美军交流密切，拥有全球首屈一指的反潜与扫雷能力。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.5 法国海军<span class="text-danger ml-3">---------全球存在海军</span></h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/法国海军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    法国海军现役39,131人，装备1艘核动力航母，舰艇108艘，飞机210架，潜艇10艘法国的海外军事基地遍及5大洲3大洋，数量仅次于美国。海军总司令部设于巴黎，大西洋舰队基地设于布雷斯特、地中海舰队基地设于土伦。其海军拥有全球仅次于美国海军的海外投送与作战能力。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.6 英国皇家海军<span class="text-danger ml-3">---------全球存在海军</span></h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/英国皇家海军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    英国皇家海军今日仍然是世界上最先进的海军之一，也是为数不多的蓝水海军。由于其悠久的海军传统和丰富的海战经验，许多英联邦和北约成员国如澳大利亚、新西兰等国的海军官兵，仍前往英国接受训练。现役装备34,360人，航母2艘，，97艘各类舰只，潜艇11艘。虽然数量大幅削减，但装备精良，世界上60%的航母技术专利归英国所有，拥有仅次于美国的航母建造技术。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.7 意大利海军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/意大利海军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    意大利海军服役有3.7万余名海军官兵，2艘航母，潜艇6艘，一百多艘舰艇以及近百架海军飞机，舰艇总排水量45万余吨。1949年4月4日意大利海军被北约分配控制亚得里亚海与奥特朗托海峡，同时也肩负着防御通过第勒尼安海的海军路线的任务，意大利海军开始进入一个快速发展时期，规模逐渐壮大。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.8 印度海军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/印度海军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    印度海军（印地文：भारतीय नौसेना；英文：Indian Navy）是印度武装力量的组成部分之一，成立于1947年，隶属印度国防部。印度海军总部位于印度新德里，下辖部队55000人，其中包括5000名海军航空兵和2000名海军陆战队，是印度洋第一大海军。印度海军拥有各类船舰155艘，包括1艘航空母舰，2艘船坞登陆舰，5艘坦克登陆舰，11艘驱逐舰，19艘护卫舰，19艘潜艇，其他战斗支援舰20艘，以及导弹艇、巡逻艇、扫雷艇、登陆艇等其他作战舰只。近年印度开始发展海上力量，积极向外国购买多艘船舰外，也开发国产潜艇及航空母舰，计划打造一支蓝水海军。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.9 韩国海军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/韩国海军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    韩国海军(South Korean Navy)由海军本部、作战司令部、陆战队司令部、军需司令部、教育司令部、填海基地司令部、3个舰队组成。总兵力67,000人（含陆战队25,000人），编有3个舰队司令部。拥有各类舰艇170余艘，总吨位约27万吨。其中主力舰艇包括：两栖攻击舰2艘，驱逐舰12艘，护卫舰28艘，常规潜艇22艘。韩国海军正致力于采购先进的舰艇以发展其远洋作战能力。
+                </div><!--card-body-->
+            </div><!--card-->
+            <h5 class="text-success mt-2" style="clear: both;">NO.10 澳大利亚皇家海军</h5>
+            <div class="card">
+                <div class="card-header"><img src="img/military/澳大利亚海军.jpg" class="figure" width="100%" height="100%"></div>
+                <div class="card-body">
+                    澳大利亚皇家海军常备兵役总规模1.4万人，预备役兵力1万人，下辖各式舰艇近50艘，潜艇6艘，总吨位近18万吨。皇家澳大利亚海军当前正致力于从传统的海军作战方式向灵活性和多重任务能力方向转变，以更好地服务于地区和全球安全利益以及和平时期国家战略目标。
+                </div><!--card-body-->
+            </div><!--card-->
+        </div>
+      </div>
+    </div><!--col-9-->
+</div><!--row-->
+
+   <!-- <div class="plane"><img src="img/military/阵风.png" width="100" height="55"></div>
+   <div class="tank"><img src="img/military/坦克.png" width="100" height="55"></div> -->
+    
+
+    <div class="backtop"><a href="#backtop" title="回到顶部"><i class="fa fa-2x fa-angle-double-up" aria-hidden="true"></i></a></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="JS/translate.js"></script>
+    <script>
+        $("#bd").css({backgroundColor:'black'});
+        $("#pills-tab").css({backgroundColor:"black"});
+        $("#display-item:nth(0)").css({borderTop:"1px dotted white"});
+        $("button").css({fontSize:"12px"});
+        $(".card-body").addClass("bg-light");
+
+       /* $("#pills-profile-tab:nth(0)").click(function(){
+            $(".plane").show();
+        });*/
+    </script>
+    
+</body>
+</html>
